@@ -5,7 +5,7 @@
 #' @param ... Ignored.
 #' 
 #' @export
-clinical_timeline_data_block <- function(...){
+new_clinical_timeline_data_block <- function(...){
   blockr::new_block(
     fields = list(),
     expr = quote({
@@ -38,6 +38,7 @@ clinical_timeline_data_block <- function(...){
 
       build()
     }),
+    ...,
     class = c("clinical_timeline_data_block", "data_block")
   )
 }

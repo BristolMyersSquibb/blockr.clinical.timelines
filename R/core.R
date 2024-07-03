@@ -1,4 +1,12 @@
-new_clinical_timeline_block <- function(data, ...) {
+#' Clinical timeline block
+#' 
+#' Clinical timeline block
+#'
+#' @param ... Ignored.
+#' 
+#' @import blockr
+#' @export
+new_clinical_timeline_block <- function(...) {
   all_cols <- function(data) colnames(data)
   usubjid_col <- function(data) {
     cols <- colnames(data)
@@ -93,19 +101,6 @@ new_clinical_timeline_block <- function(data, ...) {
     ...,
     class = c("clinical_timeline_block", "plot_block")
   )
-}
-
-#' Clinical timeline block
-#' 
-#' Clinical timeline block
-#' 
-#' @param data Dataset.
-#' @param ... Ignored.
-#' 
-#' @import blockr
-#' @export
-clinical_timeline_block <- function(data, ...){
-  blockr::initialize_block(new_clinical_timeline_block(data, ...), data)
 }
 
 #' @method server_output clinical_timeline_block
