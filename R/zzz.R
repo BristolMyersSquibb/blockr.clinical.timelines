@@ -1,6 +1,6 @@
 .onLoad <- \(...){
   blockr::register_block(
-    clinical_timeline_block,
+    new_clinical_timeline_block,
     "Clinical timeline",
     "Visualise events over time",
     input = "data.frame",
@@ -10,7 +10,7 @@
   )
 
   blockr::register_block(
-    clinical_timeline_data_block,
+    new_clinical_timeline_data_block,
     "Clinical timeline data",
     "Prepare data for clinical timeline visualisation",
     input = NA_character_,

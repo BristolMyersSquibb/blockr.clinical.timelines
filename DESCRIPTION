@@ -1,6 +1,6 @@
 Package: blockr.clinical.timelines
 Title: Clinical Timeline Block
-Version: 0.0.0.9000
+Version: 0.0.1.9000
 Authors@R: 
     c(
         person(family = "Bristol Myers Squibb",
@@ -8,7 +8,11 @@ Authors@R:
         person(given = "John",
            family = "Coene",
            role = c("aut", "cre"),
-           email = "john@opifex.org")
+           email = "john@opifex.org"),
+           person(given = "David",
+             family = "Granjon",
+             role = c("ctb"),
+             email = "david@cynkra.com")
     )
 Description: Create clinical timeline blocks.
 License: GPL (>= 3)
